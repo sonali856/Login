@@ -77,7 +77,31 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/pic"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:weightSum="4"
+        android:layout_below="@+id/etEmail"
+        android:orientation="horizontal">
 
+        <Button
+            android:id="@+id/btnSelectPhoto"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="wrap_content"
+            android:text="Select Photo" />
+
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_camera" />
+    </LinearLayout>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -85,7 +109,7 @@
         android:id="@+id/btnSave"
         android:background="@color/primary"
         android:textColor="@color/white"
-        android:layout_below="@+id/etEmail"
+        android:layout_below="@+id/pic"
         android:layout_centerHorizontal="true"
         android:onClick="save"
         />
@@ -99,7 +123,17 @@
         android:layout_below="@+id/btnSave"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="30dp" />
-
-
+        android:layout_marginTop="10dp" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/test"
+    android:text="sonalii"
+    android:layout_below="@+id/tvWhy"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/s"
+        android:text="dasc"
+        android:layout_below="@+id/test"/>
 </RelativeLayout>
